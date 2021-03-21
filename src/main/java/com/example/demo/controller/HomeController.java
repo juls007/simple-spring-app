@@ -13,6 +13,6 @@ public class HomeController {
     @GetMapping("/")
     public String home() {
         LOGGER.info("Calling home api end point");
-        return "Hello from Azure App Service!";
+        return "Hello from Azure App Service! (Staging Slot)";
     }
 }
