@@ -28,6 +28,6 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'julius-spring-app'
-        slot-name: 'production'
+        slot-name: 'staging'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_35b48b940a0f4dcaad911d48871eed41 }}
         package: '${{ github.workspace }}/target/*.jar'
